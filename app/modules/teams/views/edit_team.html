@@ -1,0 +1,21 @@
+<h1>Editing The Whatevers</h1>
+
+<h1>Add Heroes ({{ editCtrl.heroes.length }}/6)</h1>
+
+<form ng-hide="editCtrl.heroes.length >=6">
+  <input type="text" placeholder="Hero" ng-model="editCtrl.newHeroName">
+  <input type="submit" value="Add Character" ng-click="edit.Ctrl.addCharacter()">
+</form>
+
+<h2 ng-show="editCtrl.heroes.length >= 6">Your Team is Complete<a ui-sref="teams">Go back to team list</a></h2>
+
+<ul>
+  <li ng-repeat="character in editCtrl.heroes">
+    <img class="image" ng-src="{{character.image}}"/>
+    <h3>
+      {{ character.name }}
+    </h3>
+    <p class="description">{{ character.description }}</p>
+    <i class="fa fa-times-circle" ng-click="teamCtrl.deleteCharacter(character)"></i>
+  </li>
+</ul>
