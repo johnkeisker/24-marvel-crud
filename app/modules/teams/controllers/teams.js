@@ -20,6 +20,7 @@ class TeamsController {
 		this._$http
 		.get(`https://teams.mybluemix.net/api/teams`)
 		.then((response) => {
+			console.log(response);
 			this.teams = response.data;
 		})
   }

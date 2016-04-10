@@ -1,0 +1,6 @@
+<h1>Your Team?</h1>
+<a ui-sref = "edit_team({id: teamCtrl.team.id})">Edit it!</a>
+
+<div><img src="{{hero.image}}"></div>
+<div ng-repeat="hero in teamCtrl.heroes">{{hero.name}}</div>
+<div ng-repeat="hero in teamCtrl.heroes">{{hero.description}}</div>
