@@ -1,11 +1,13 @@
 <h1>Editing The Whatevers</h1>
 
-<h1>Add Heroes ({{ editCtrl.heroes.length }}/6)</h1>
+<h1>Superhero Name ({{ editCtrl.heroes.length }}/6)</h1>
 
 <form ng-hide="editCtrl.heroes.length >=6">
   <input type="text" placeholder="Hero" ng-model="editCtrl.newHeroName">
-  <input type="submit" value="Add Character" ng-click="edit.Ctrl.addCharacter()">
+  <input type="submit" value="Add Hero" ng-click="edit.Ctrl.addCharacter()">
 </form>
+
+<p>Which hero do you want to add to your team?</p>
 
 <h2 ng-show="editCtrl.heroes.length >= 6">Your Team is Complete<a ui-sref="teams">Go back to team list</a></h2>
 

@@ -21,7 +21,7 @@ let App = angular.module('app', ['ui.router', 'tiy.teams']);
 */
 
 function config($stateProvider, $urlRouterProvider) {
-  $urlRouterProvider.otherwise("/");
+  $urlRouterProvider.otherwise("/teams/new");
 }
 
 App.config(config);
