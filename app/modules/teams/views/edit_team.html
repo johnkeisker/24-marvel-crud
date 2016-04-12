@@ -14,9 +14,7 @@
 <ul>
   <li ng-repeat="character in editCtrl.heroes">
     <img class="image" ng-src="{{character.image}}"/>
-    <h3>
-      {{ character.name }}
-    </h3>
+    <h3>{{ character.name }}</h3>
     <p class="description">{{ character.description }}</p>
     <i class="fa fa-times-circle" ng-click="editCtrl.deleteCharacter(character)"></i>
   </li>
