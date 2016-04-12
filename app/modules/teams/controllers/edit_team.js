@@ -69,7 +69,7 @@ class EditTeamController {
   addCharacter() {
 		this._$http
 		.get(`http://gateway.marvel.com:80/v1/public/characters?name=${this.newHeroName}&apikey=0fd87f40d6dd1419e4153fe1a1c9cf04`)
-		.then ((respones) => {
+		.then ((response) => {
 			console.log(response);
 			this.name = response.data.data.results[0].name;
 			this.marvel_id = response.data.data.results[0].id;
@@ -89,8 +89,11 @@ class EditTeamController {
 				this.heroes.push(response.data);
 				this.newHeroName = "";
 			});
-		});
-  }
+
+		})
+
+
+  };
 
   deleteCharacter(hero) {
 		this.heroes.splice(this.heroes.indexOf(hero), 1);

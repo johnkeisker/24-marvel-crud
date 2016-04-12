@@ -17,11 +17,11 @@ let App = angular.module('app', ['ui.router', 'tiy.teams']);
   to set up your routing.
 
   STEP 1: Use $urlRouterProvider.otherwise() to default to
-          /teams/new
+          /new
 */
 
 function config($stateProvider, $urlRouterProvider) {
-  $urlRouterProvider.otherwise("/teams/new");
+  $urlRouterProvider.otherwise("/");
 }
 
 App.config(config);
