@@ -1,11 +1,13 @@
 body {
-  background-color: #ffcc66;
+  height: 700px;
+  background: linear-gradient(135deg, #ffcc66 , #FF9933 70%, #FF9900);
+
 }
 
 .header {
   h1 {
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 200px;
     font-family: Verdana;
     color: #CC0000;
     text-shadow: 3px 3px gray;
@@ -28,17 +30,17 @@ body {
     font-family: Verdana;
     // text-shadow: 2px 2px gray;
     display: inline-block;
-    margin-left: 50px;
+    margin-left: 250px;
   }
   input {
     width: 460px;
     border: 2px solid gray;
     border-radius: 5px;
     box-shadow: 3px 3px 3px black;
-    margin-left: 10px;
+    margin-left: 20px;
   }
   p {
-    margin-left: 200px;
+    margin-left: 410px;
     margin-top: 1px;
     margin-bottom: 20px;
     color: gray;
@@ -51,7 +53,7 @@ body {
   input {
   font-family: Verdana;
   font-weight: bold;
-  margin-left: 190px;
+  margin-left: 400px;
   border: 4px solid gray;
   background-color: #CC0000;
   border-radius: 5px;
