@@ -1,35 +1,22 @@
 <div class="header">
   <h1>New Team</h1>
+  <h2>Create a new team of Marvel superheroes.</h2>
 </div>
 
-<div class="header-info">
-  <h1>Create a new team of Marvel superheroes.</h1>
-</div>
-
-<div class="team-name">
-  <h1>Team Name</h1>
-</div>
-
-<div class="team-input">
-  <form>
-    <input type="text" placeholder="" ng-model="newCtrl.name">
+<form>
+  <div class="input">
+    <h1>Team Name</h1>
+    <input id="input-1"  type="text" placeholder="" ng-model="newCtrl.name">
     <p>What do you want to call your new team of superheroes?</p>
-  </form>
-</div>
+  </div>
 
-<div class="your-name">
-  <h1>Your Name</h1>
-</div>
-
-<div class="name-input">
-  <form>
+  <div class="input">
+    <h1>Your Name</h1>
     <input type="text" placeholder="" ng-model="newCtrl.creator">
     <p>We don't know how to log people in yet,so just tell us yor name.</p>
-  </form>
-</div>
+  </div>
 
-<div class="submit">
-  <form>
+  <div class="submit">
     <input type="submit" value="Create Team" ng-click="newCtrl.createTeam()">
-  </form>
-</div>
+  </div>
+</form>
