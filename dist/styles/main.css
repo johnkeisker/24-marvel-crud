@@ -1,3 +1,6 @@
+@media (max-width: 980px) {
+  display: none; }
+
 body {
   height: 700px;
   background: linear-gradient(135deg, #ffcc66, #FF9933 70%, #FF9900); }
